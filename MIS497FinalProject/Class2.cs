@@ -7,5 +7,6 @@ namespace MIS497FinalProject
 {
     public class Class2
     {
+        ggggg;
     }
 }
