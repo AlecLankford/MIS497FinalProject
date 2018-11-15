@@ -5,6 +5,7 @@ using System.Web;
 
 namespace MIS497FinalProject
 {
+    //(userID, Name, email, password, birthdate, weight, height, dateJoined)
     public class User
     {
     }
