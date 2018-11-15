@@ -176,7 +176,6 @@
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\Food.cs" />
     <Compile Include="Classes\Health.cs" />
-    <Compile Include="Class5.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
