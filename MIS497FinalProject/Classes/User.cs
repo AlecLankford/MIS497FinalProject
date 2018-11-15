@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MIS497FinalProject
 {
-    public class Class1
+    public class User
     {
     }
 }

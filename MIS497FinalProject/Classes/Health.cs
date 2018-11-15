@@ -5,8 +5,7 @@ using System.Web;
 
 namespace MIS497FinalProject
 {
-    public class Class2
+    public class Health
     {
-        
     }
 }

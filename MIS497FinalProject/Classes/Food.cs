@@ -5,7 +5,8 @@ using System.Web;
 
 namespace MIS497FinalProject
 {
-    public class Class3
+    public class Food
     {
+        
     }
 }
