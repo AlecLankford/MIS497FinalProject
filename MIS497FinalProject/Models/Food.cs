@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MIS497FinalProject
+namespace MIS497FinalProject.Models
 {
-    //constructors (Food name, calories, serving size, fat, protein, sodium, foodID)
     public class Food
     {
-        
+        public int foodID { get; set; }
+        public string foodName { get; set; }
     }
 }
