@@ -8,5 +8,7 @@ namespace MIS497FinalProject.Models
     public class Log
     {
         public int logID { get; set; }
+        public DateTime logDate { get; set; }
+
     }
 }

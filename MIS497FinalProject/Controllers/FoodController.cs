@@ -10,6 +10,7 @@ namespace MIS497FinalProject.Controllers
     public class FoodController : Controller
     {
         // GET: Food
+        [Route("food")]
         public ActionResult Food()
         {
             var food = new Food() { foodName = "Foods" };
