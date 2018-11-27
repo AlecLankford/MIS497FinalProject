@@ -33,5 +33,12 @@ namespace MIS497FinalProject.Controllers
 
             return View();
         }
+
+        public ActionResult Log()
+        {
+            ViewBag.Message = "Log";
+
+            return View();
+        }
     }
 }
