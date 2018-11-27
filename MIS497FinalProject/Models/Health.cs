@@ -11,5 +11,12 @@ namespace MIS497FinalProject.Models
         public int ID { get; set; }
         public double BMI { get; set; }
         public double WeightChange { get; set; }
+         
+ 
+        public void BMICalc(User Weight, User Height)
+        {
+            BMI = (703 * (Weight / (Math.Pow(Height,2)));
+            
+        }
     }
 }
