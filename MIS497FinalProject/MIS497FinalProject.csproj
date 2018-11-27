@@ -174,6 +174,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HealthController.cs" />
+    <Compile Include="Controllers\MealController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
@@ -183,6 +184,7 @@
     <Compile Include="Migrations\201811270110122_SeedDB.Designer.cs">
       <DependentUpon>201811270110122_SeedDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Meal.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Health.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -207,6 +209,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-Cerulean.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -265,12 +268,11 @@
     <Content Include="Views\Food\Food.cshtml" />
     <Content Include="Views\Log\Log.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
-    <Content Include="Views\Food\foodDetail.cshtml" />
-    <Content Include="Views\Food\Index.cshtml" />
     <Content Include="Views\Log\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Meal\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
