@@ -173,9 +173,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\HealthController.cs" />
-    <Compile Include="Controllers\MealController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
       <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
@@ -184,9 +181,15 @@
     <Compile Include="Migrations\201811270110122_SeedDB.Designer.cs">
       <DependentUpon>201811270110122_SeedDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811271921026_SeedDB2.cs" />
+    <Compile Include="Migrations\201811271921026_SeedDB2.Designer.cs">
+      <DependentUpon>201811271921026_SeedDB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811271924159_SeedDB3.cs" />
+    <Compile Include="Migrations\201811271924159_SeedDB3.Designer.cs">
+      <DependentUpon>201811271924159_SeedDB3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Meal.cs" />
-    <Compile Include="Models\User.cs" />
-    <Compile Include="Models\Health.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -297,6 +300,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811270110122_SeedDB.resx">
       <DependentUpon>201811270110122_SeedDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811271921026_SeedDB2.resx">
+      <DependentUpon>201811271921026_SeedDB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811271924159_SeedDB3.resx">
+      <DependentUpon>201811271924159_SeedDB3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
