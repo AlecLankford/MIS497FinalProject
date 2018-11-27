@@ -13,7 +13,7 @@ namespace MIS497FinalProject.Controllers
         [Route("food")]
         public ActionResult Food()
         {
-            var food = new Food() { foodName = "Foods" };
+            var food = new Food() { FoodName = "Foods" };
             return View(food);
         }
     }

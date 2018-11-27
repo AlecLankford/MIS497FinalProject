@@ -5,10 +5,11 @@ using System.Web;
 
 namespace MIS497FinalProject.Models
 {
-    public class Log
+    //Calculations (BMI, weight change, etc...)
+    public class Health
     {
         public int ID { get; set; }
-        public DateTime LogDate { get; set; }
-
+        public double BMI { get; set; }
+        public double WeightChange { get; set; }
     }
 }

@@ -20,6 +20,11 @@ namespace MIS497FinalProject.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Food> Food  { get; set; }
+        public DbSet<Health> Health { get; set; }
+        public DbSet<User> User { get; set; }
+        public DbSet<Log> Log { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

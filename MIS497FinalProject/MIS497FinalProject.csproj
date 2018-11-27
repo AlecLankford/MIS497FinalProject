@@ -173,8 +173,18 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Classes\User.cs" />
-    <Compile Include="Classes\Health.cs" />
+    <Compile Include="Controllers\HealthController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
+    <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
+      <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811270110122_SeedDB.cs" />
+    <Compile Include="Migrations\201811270110122_SeedDB.Designer.cs">
+      <DependentUpon>201811270110122_SeedDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Health.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -194,7 +204,7 @@
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Startup.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -278,6 +288,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811150029251_InitialModel.resx">
       <DependentUpon>201811150029251_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811270109145_CreateNewDatabase.resx">
+      <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811270110122_SeedDB.resx">
+      <DependentUpon>201811270110122_SeedDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

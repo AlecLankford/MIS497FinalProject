@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MIS497FinalProject
+namespace MIS497FinalProject.Controllers
 {
-    //Calculations (BMI, weight change, etc...)
-    public class Health
+    public class UserController
     {
     }
 }
