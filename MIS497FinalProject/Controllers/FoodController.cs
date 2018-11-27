@@ -10,10 +10,20 @@ namespace MIS497FinalProject.Controllers
     public class FoodController : Controller
     {
         // GET: Food
-        [Route("food")]
-        public ActionResult Food()
+        private ApplicationDbContext _context;
+
+        public FoodController()
         {
-            var food = new Food() { FoodName = "Food" };
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+        public ViewResult Index()
+        {
+            var food = _context.Food;
             return View(food);
         }
     }

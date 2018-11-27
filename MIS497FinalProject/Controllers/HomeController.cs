@@ -26,5 +26,12 @@ namespace MIS497FinalProject.Controllers
 
             return View();
         }
+
+        public ActionResult Food()
+        {
+            ViewBag.Message = "Your Food page.";
+
+            return View();
+        }
     }
 }

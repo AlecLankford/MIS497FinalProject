@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,7 +9,10 @@ namespace MIS497FinalProject.Models
     public class Food
     {
         public int ID { get; set; }
+        [Required]
+        [StringLength(100)]
         public string FoodName { get; set; }
+        [Required]
         public double Calories { get; set; }
         public double Protein { get; set; }
         public double Fat { get; set; }
