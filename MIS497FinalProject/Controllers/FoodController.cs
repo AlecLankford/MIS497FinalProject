@@ -23,7 +23,7 @@ namespace MIS497FinalProject.Controllers
         }
         public ViewResult Food()
         {
-            var food = _context.Food;
+            var food = _context.Food.ToList();
             return View(food);
         }
     }

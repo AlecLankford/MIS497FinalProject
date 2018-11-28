@@ -189,6 +189,10 @@
     <Compile Include="Migrations\201811271924159_SeedDB3.Designer.cs">
       <DependentUpon>201811271924159_SeedDB3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811280306145_changeTables.cs" />
+    <Compile Include="Migrations\201811280306145_changeTables.Designer.cs">
+      <DependentUpon>201811280306145_changeTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
@@ -305,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811271924159_SeedDB3.resx">
       <DependentUpon>201811271924159_SeedDB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811280306145_changeTables.resx">
+      <DependentUpon>201811280306145_changeTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
