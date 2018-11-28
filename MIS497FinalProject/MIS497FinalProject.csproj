@@ -334,6 +334,7 @@
     <Content Include="Views\Home\Log.cshtml" />
     <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
+    <Content Include="Views\UserFood\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

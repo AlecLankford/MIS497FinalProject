@@ -18,6 +18,17 @@ namespace MIS497FinalProject.Controllers
         //    var log = new Log();
         //    return View(log);
         //}
+        private ApplicationDbContext _context;
+
+        public LogController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
 
         public ActionResult Index()
         {
@@ -25,10 +36,21 @@ namespace MIS497FinalProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string selectedDate)
+        public ActionResult Index(string Submit)
         {
-            ViewBag.Message = "Selected Date: " + selectedDate;
+            //var log = _context.Log.Include(d => d.Logate);
+
+            //if (!String.IsNullOrEmpty(Submit))
+            //{
+            //    DateTime search_date = Convert.ToDateTime(Submit);
+            //    log = log.Where(r => r.LogDate == search_date);
+            //}
+            //return View(log.ToList());
+
+           // ViewBag.Message = "Selected Date: " + selectedDate;
             return View();
         }
+
+
     }
 }

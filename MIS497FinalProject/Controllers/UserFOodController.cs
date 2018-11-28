@@ -10,7 +10,7 @@ namespace MIS497FinalProject.Controllers
 {
     public class UserFoodController : Controller
     {
-        // GET: UserFOod
+        // GET: UserFood
 
         private ApplicationDbContext _context;
 
