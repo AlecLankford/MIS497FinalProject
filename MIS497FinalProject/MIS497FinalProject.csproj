@@ -173,6 +173,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\UserFoodController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
       <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
@@ -193,6 +194,14 @@
     <Compile Include="Migrations\201811280306145_changeTables.Designer.cs">
       <DependentUpon>201811280306145_changeTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811280449315_addUserFoodTable.cs" />
+    <Compile Include="Migrations\201811280449315_addUserFoodTable.Designer.cs">
+      <DependentUpon>201811280449315_addUserFoodTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811281801272_bsmigration.cs" />
+    <Compile Include="Migrations\201811281801272_bsmigration.Designer.cs">
+      <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
@@ -212,8 +221,10 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\UserFood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Models\addFoodViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -277,9 +288,11 @@
     <Content Include="Views\Home\Food.cshtml" />
     <Content Include="Views\Home\Log.cshtml" />
     <Content Include="Views\Log\Index.cshtml" />
+    <Content Include="Views\UserFood\UserFoodForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -312,6 +325,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811280306145_changeTables.resx">
       <DependentUpon>201811280306145_changeTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811280449315_addUserFoodTable.resx">
+      <DependentUpon>201811280449315_addUserFoodTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811281801272_bsmigration.resx">
+      <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

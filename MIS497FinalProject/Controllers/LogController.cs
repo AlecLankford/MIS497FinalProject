@@ -7,6 +7,7 @@ using MIS497FinalProject.Models;
 
 namespace MIS497FinalProject.Controllers
 {
+
     public class LogController : Controller
     {
         // GET: Log

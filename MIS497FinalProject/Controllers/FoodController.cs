@@ -21,6 +21,7 @@ namespace MIS497FinalProject.Controllers
         {
             _context.Dispose();
         }
+
         public ViewResult Food()
         {
             var food = _context.Food.ToList();
