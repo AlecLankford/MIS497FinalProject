@@ -9,5 +9,6 @@ namespace MIS497FinalProject.Models
     public class addFoodViewModel
     {
        public UserFood newFood { get; set; }
+    
     }
 }
