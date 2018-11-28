@@ -21,7 +21,7 @@ namespace MIS497FinalProject.Controllers
         {
             _context.Dispose();
         }
-        public ViewResult Index()
+        public ViewResult Food()
         {
             var food = _context.Food;
             return View(food);
