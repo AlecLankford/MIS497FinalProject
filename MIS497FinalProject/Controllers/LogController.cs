@@ -47,7 +47,7 @@ namespace MIS497FinalProject.Controllers
             //}
             //return View(log.ToList());
 
-           // ViewBag.Message = "Selected Date: " + selectedDate;
+            //ViewBag.Message = "Selected Date: " + selectedDate;
             return View();
         }
 
