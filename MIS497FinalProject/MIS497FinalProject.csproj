@@ -173,6 +173,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\GraphsController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
       <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
@@ -224,6 +225,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\Graphs.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -340,6 +342,7 @@
     <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\Food\InsertData.cshtml" />
     <Content Include="Views\Food\EditFood.cshtml" />
+    <Content Include="Views\Graphs\Graphs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
