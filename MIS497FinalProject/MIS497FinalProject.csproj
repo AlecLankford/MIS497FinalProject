@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201811281801272_bsmigration.Designer.cs">
       <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811282351297_logTableEdit.cs" />
+    <Compile Include="Migrations\201811282351297_logTableEdit.Designer.cs">
+      <DependentUpon>201811282351297_logTableEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
@@ -332,9 +336,9 @@
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Home\Food.cshtml" />
     <Content Include="Views\Home\Log.cshtml" />
-    <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
     <Content Include="Views\UserFood\Index.cshtml" />
+    <Content Include="Views\Log\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -377,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811281801272_bsmigration.resx">
       <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811282351297_logTableEdit.resx">
+      <DependentUpon>201811282351297_logTableEdit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
