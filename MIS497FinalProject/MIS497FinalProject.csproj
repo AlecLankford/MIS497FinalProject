@@ -173,6 +173,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\UserFoodController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
@@ -225,6 +226,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reports.cs" />
     <Compile Include="Models\UserFood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -339,17 +341,8 @@
     <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
     <Content Include="Views\UserFood\Index.cshtml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Home\Reports.cshtml" />
-=======
->>>>>>> parent of 09c4b79... Reports
-=======
->>>>>>> parent of 09c4b79... Reports
-=======
->>>>>>> parent of 09c4b79... Reports
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
