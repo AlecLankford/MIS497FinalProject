@@ -342,6 +342,7 @@
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
     <Content Include="Views\UserFood\Index.cshtml" />
     <Content Include="Views\Reports\Reports.cshtml" />
+    <Content Include="Views\Home\Reports.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
