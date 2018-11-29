@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201811281801272_bsmigration.Designer.cs">
       <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811290002306_startingplace.cs" />
+    <Compile Include="Migrations\201811290002306_startingplace.Designer.cs">
+      <DependentUpon>201811290002306_startingplace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Meal.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
@@ -377,6 +381,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811281801272_bsmigration.resx">
       <DependentUpon>201811281801272_bsmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811290002306_startingplace.resx">
+      <DependentUpon>201811290002306_startingplace.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
