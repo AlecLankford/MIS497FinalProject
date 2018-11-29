@@ -10,8 +10,20 @@ namespace MIS497FinalProject.Controllers
     public class ReportsController : Controller
     {
         // GET: Reports
+        private ApplicationDbContext _context;
+        
+        public ReportsController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
         public ActionResult Reports()
         {
+            
             return View();
         }
     }

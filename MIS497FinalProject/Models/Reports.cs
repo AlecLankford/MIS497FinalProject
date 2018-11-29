@@ -7,5 +7,7 @@ namespace MIS497FinalProject.Models
 {
     public class Reports
     {
+        public int userCount { get; set; }
+
     }
 }
