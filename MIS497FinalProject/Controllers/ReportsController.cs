@@ -15,5 +15,16 @@ namespace MIS497FinalProject.Controllers
         {
             return View();
         }
+        private ApplicationDbContext _context;
+
+        public ReportsController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
     }
 }
