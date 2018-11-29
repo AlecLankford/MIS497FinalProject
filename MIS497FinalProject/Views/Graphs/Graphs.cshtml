@@ -18,12 +18,12 @@
             data.addColumn('string', 'Element');
             data.addColumn('number', 'Percentage');
             data.addRows([
-                ['Protein', 0.78],
-                ['Carbs', 0.21],
-                ['Fat', 0.01]
+                ['Protein', @ViewBag.ProteinTotal],
+                ['Carbs', @ViewBag.CarbTotal],
+                ['Fat', @ViewBag.FatTotal]
             ]);
 
-            var options = { 'title': 'Nutrion Composition', 'width': 550, 'height': 400 };
+            var options = { 'title': 'Food Nutritional Composition', 'width': 550, 'height': 400 };
 
             var chart = new google.visualization.PieChart(document.getElementById('nutritionalChart'));
             chart.draw(data, options);
@@ -33,4 +33,5 @@
 </head>
 <body>
     <div id="nutritionalChart" />
+    
 </body>

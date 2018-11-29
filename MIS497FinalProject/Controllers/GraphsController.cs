@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity; 
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -21,9 +22,21 @@ namespace MIS497FinalProject.Controllers
         {
             _context.Dispose();
         }
-
+        
         public ActionResult Graphs()
         {
+            var fList = _context.Food.ToList();
+            int fCount = fList.Count();
+
+            var fatTotal = _context.Food.Sum(f => f.Fat);
+            ViewBag.FatTotal = fatTotal;
+
+            var proteinTotal = _context.Food.Sum(p => p.Protein);
+            ViewBag.ProteinTotal = proteinTotal;
+
+            var carbTotal = _context.Food.Sum(c => c.Carbs);
+            ViewBag.CarbTotal = carbTotal;
+            //var carbList
             
             return View();
         }

@@ -7,8 +7,9 @@ namespace MIS497FinalProject.Models
 {
     public class Graphs
     {
-        public int Protein { get; set; }
-        public int Carbs { get; set; }
-        public int Fat { get; set; }
+        public int gfoodID { get; set; }
+        public int protein { get; set; }
+        public int carbs { get; set; }
+        public int fat { get; set; }
     }
 }
