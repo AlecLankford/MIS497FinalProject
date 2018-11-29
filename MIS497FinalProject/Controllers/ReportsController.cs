@@ -9,6 +9,7 @@ namespace MIS497FinalProject.Controllers
 {
     public class ReportsController : Controller
     {
+        Reports countReport = new Reports();
         // GET: Reports
         private ApplicationDbContext _context;
         
@@ -21,10 +22,21 @@ namespace MIS497FinalProject.Controllers
         {
             _context.Dispose();
         }
+
+
+
         public ActionResult Reports()
         {
-            
+            var usersCount = _context.Users.Count();
+            countReport.userCount = usersCount;
+            ViewBag.ShowCountReport = countReport.userCount;
             return View();
         }
+
+        //public ActionResult Reports()
+        //{
+            
+        //    return View();
+        //}
     }
 }
