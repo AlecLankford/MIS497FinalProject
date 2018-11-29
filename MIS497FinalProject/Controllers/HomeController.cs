@@ -40,5 +40,11 @@ namespace MIS497FinalProject.Controllers
 
             return View();
         }
+
+        public ActionResult Reports()
+        {
+            ViewBag.Message = "Reports";
+            return View();
+        }
     }
 }
