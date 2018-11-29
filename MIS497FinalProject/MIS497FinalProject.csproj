@@ -341,8 +341,11 @@
     <Content Include="Views\UserFood\Index.cshtml" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Home\Reports.cshtml" />
+=======
+>>>>>>> parent of 09c4b79... Reports
 =======
 >>>>>>> parent of 09c4b79... Reports
 =======
