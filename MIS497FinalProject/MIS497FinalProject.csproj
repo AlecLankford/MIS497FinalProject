@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44325</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -339,17 +339,8 @@
     <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
     <Content Include="Views\UserFood\Index.cshtml" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Content Include="Views\Reports\Reports.cshtml" />
     <Content Include="Views\Home\Reports.cshtml" />
-=======
->>>>>>> parent of 09c4b79... Reports
-=======
->>>>>>> parent of 09c4b79... Reports
-=======
->>>>>>> parent of 09c4b79... Reports
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -411,15 +402,14 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51011</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51011/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>https://localhost:44325/</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
