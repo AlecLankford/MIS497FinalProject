@@ -14,8 +14,8 @@
 
         function drawChart() {
             // Define the chart to be drawn.
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Element');
+            var nutritionData = new google.visualization.DataTable();
+            data.addColumn('string', 'Nutrient');
             data.addColumn('number', 'Percentage');
             data.addRows([
                 ['Protein', @ViewBag.ProteinTotal],
@@ -26,7 +26,13 @@
             var options = { 'title': 'Food Nutritional Composition', 'width': 550, 'height': 400 };
 
             var chart = new google.visualization.PieChart(document.getElementById('nutritionalChart'));
-            chart.draw(data, options);
+            chart.draw(nutritionData, options);
+
+            var caloriesData = new google.visualization.DataTable();
+            data.addColumn('string', 'Food');
+            data.addColumn('number', 'Calories');
+            data.addRows([
+                [)
         }
      
     </script>
