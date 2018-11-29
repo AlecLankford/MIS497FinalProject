@@ -1,0 +1,52 @@
+﻿
+@model MIS497FinalProject.Models.addFoodViewModel
+@{
+    ViewBag.Title = "New Food";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add new food for today:</h2>
+
+@using (Html.BeginForm("Save", "UserFood"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.newFood.FoodName)
+
+        @Html.TextBoxFor(m => m.newFood.FoodName, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.newFood.Calories)
+
+        @Html.TextBoxFor(m => m.newFood.Calories, new { @class = "form-control" })
+
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.newFood.Carbs)
+
+        @Html.TextBoxFor(m => m.newFood.Carbs, "Optional", new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.newFood.Fat)
+
+        @Html.TextBoxFor(m => m.newFood.Fat, "Optional", new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+
+        @Html.LabelFor(m => m.newFood.Protein)
+
+        @Html.TextBoxFor(m => m.newFood.Protein, "Optional", new { @class = "form-control" })
+    </div>
+
+
+    //@Html.HiddenFor(m => m.Customer.Id)
+
+    <button type="submit" class="btn btn-primary">Save</button>
+
+} 

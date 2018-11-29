@@ -1,8 +1,33 @@
-﻿@model MIS497FinalProject.Models.Food
+﻿@model IEnumerable<MIS497FinalProject.Models.Food>
 @{
     ViewBag.Title = "Food";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.FoodName</h2>
+<h2>Today</h2>
 
+@if (!Model.Any())
+
+{
+    <p>You have not added any food for today.</p>
+}
+
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Today</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var food in Model)
+            {
+                <tr>
+                    <td>@food.FoodName, @food.Calories</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+} 

@@ -54,9 +54,9 @@ namespace MIS497FinalProject
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "362749667814178",
+               appSecret: "991f1929aed8b62238671cfdd3361358");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
