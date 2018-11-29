@@ -27,5 +27,10 @@ namespace MIS497FinalProject.Controllers
             var food = _context.Food.ToList();
             return View(food);
         }
+
+        public ActionResult InsertData()
+        {
+            return View();
+        }
     }
 }

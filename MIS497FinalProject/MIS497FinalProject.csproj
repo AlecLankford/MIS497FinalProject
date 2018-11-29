@@ -339,6 +339,7 @@
     <Content Include="Views\Log\Index.cshtml" />
     <Content Include="Views\UserFood\UserFoodForm.cshtml" />
     <Content Include="Views\UserFood\Index.cshtml" />
+    <Content Include="Views\Food\InsertData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
