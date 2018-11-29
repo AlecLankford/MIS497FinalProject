@@ -20,27 +20,27 @@
                 @Html.ActionLink("CalTrak", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                //if statement for if user canmanage, show this navbar
+                <!--//if statement for if user canmanage, show this navbar-->
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <!-- <li>@Html.ActionLink("About", "About", "Home")</li> -->
+                    <!--<li>@Html.ActionLink("Contact", "Contact", "Home")</li> -->
                     <li>@Html.ActionLink("Food", "Food", "Food")</li>
                     <li>@Html.ActionLink("Log", "Index", "Log")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Calorie Tracker</p>
-        </footer>
-    </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
-</html>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Calorie Tracker</p>
+            </footer>
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>
