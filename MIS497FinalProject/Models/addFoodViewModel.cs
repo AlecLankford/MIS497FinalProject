@@ -8,7 +8,7 @@ namespace MIS497FinalProject.Models
 {
     public class addFoodViewModel
     {
-       public UserFood newFood { get; set; }
+       public Food newFood { get; set; }
     
     }
 }

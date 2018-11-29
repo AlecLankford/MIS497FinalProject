@@ -22,7 +22,6 @@ namespace MIS497FinalProject.Models
     {
         public DbSet<Food> Food  { get; set; }
         public DbSet<Log> Log { get; set; }
-        public DbSet<UserFood> UserFood{ get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

@@ -173,7 +173,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\UserFoodController.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.cs" />
     <Compile Include="Migrations\201811270109145_CreateNewDatabase.Designer.cs">
       <DependentUpon>201811270109145_CreateNewDatabase.cs</DependentUpon>
@@ -206,7 +205,6 @@
     <Compile Include="Migrations\201811290002306_startingplace.Designer.cs">
       <DependentUpon>201811290002306_startingplace.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Meal.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -219,13 +217,16 @@
     <Compile Include="Migrations\201811150029251_InitialModel.Designer.cs">
       <DependentUpon>201811150029251_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811290937254_11291.cs" />
+    <Compile Include="Migrations\201811290937254_11291.Designer.cs">
+      <DependentUpon>201811290937254_11291.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\UserFood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Models\addFoodViewModel.cs" />
@@ -334,12 +335,9 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Food\Food.cshtml" />
     <Content Include="Views\Shared\_Navbar.cshtml" />
-    <Content Include="Views\Home\Food.cshtml" />
-    <Content Include="Views\Home\Log.cshtml" />
     <Content Include="Views\Log\Index.cshtml" />
-    <Content Include="Views\UserFood\UserFoodForm.cshtml" />
-    <Content Include="Views\UserFood\Index.cshtml" />
     <Content Include="Views\Food\InsertData.cshtml" />
+    <Content Include="Views\Food\EditFood.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -385,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811290002306_startingplace.resx">
       <DependentUpon>201811290002306_startingplace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811290937254_11291.resx">
+      <DependentUpon>201811290937254_11291.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

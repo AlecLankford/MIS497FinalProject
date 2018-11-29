@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Today</h2>
+<h2>Select Food:</h2>
 
 @if (!Model.Any())
 
@@ -17,15 +17,27 @@ else
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>Today</th>
+                <th>Food Name</th>
+                <th>Calories</th>
+                <th>Protein</th>
+                <th>Fat</th>
+                <th>Carbs</th>
             </tr>
         </thead>
-
         <tbody>
             @foreach (var food in Model)
             {
                 <tr>
-                    <td>@food.FoodName, @food.Calories</td>
+                    <td><input type="checkbox" />@food.FoodName</td>
+                    <td>@food.Calories</td>
+                    <td>@food.Protein</td>
+                    <td>@food.Fat</td>
+                    <td>@food.Carbs</td>
+
+                    <td>
+                        @Html.ActionLink("Edit", "EditFood", new { foodName = @food.FoodName })|
+                        @Html.ActionLink("Delete", "DeleteFood", new { foodName = @food.FoodName })
+                    </td>
                 </tr>
             }
         </tbody>
@@ -33,3 +45,7 @@ else
 }
 
 @Html.ActionLink("Insert Record", "InsertData")
+    <span>|</span>
+@Html.ActionLink("Create Reports", "../Log/Index")
+
+

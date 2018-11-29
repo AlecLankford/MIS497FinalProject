@@ -23,10 +23,8 @@
                 <!--//if statement for if user canmanage, show this navbar-->
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <!-- <li>@Html.ActionLink("About", "About", "Home")</li> -->
-                    <!--<li>@Html.ActionLink("Contact", "Contact", "Home")</li> -->
-                    <li>@Html.ActionLink("Food Today", "Food", "Food")</li>
-                    <li>@Html.ActionLink("Log", "Index", "Log")</li>
+                    <li>@Html.ActionLink("Food Selector", "Food", "Food")</li>
+                    <li>@Html.ActionLink("Reports", "Index", "Log")</li>
                 </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
