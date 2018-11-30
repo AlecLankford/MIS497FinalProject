@@ -79,6 +79,14 @@ namespace MIS497FinalProject.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [DisplayAttribute(Name = "First Name")]
+        public string firstName { get; set; }
+
+        [Required]
+        [DisplayAttribute(Name = "Last Name")]
+        public string lastName { get; set; }
     }
 
     public class ResetPasswordViewModel

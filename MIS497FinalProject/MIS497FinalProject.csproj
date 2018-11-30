@@ -231,6 +231,10 @@
     <Compile Include="Migrations\201811300032104_fingerscrossed.Designer.cs">
       <DependentUpon>201811300032104_fingerscrossed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811301820447_addUserName.cs" />
+    <Compile Include="Migrations\201811301820447_addUserName.Designer.cs">
+      <DependentUpon>201811301820447_addUserName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Food.cs" />
@@ -409,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811300032104_fingerscrossed.resx">
       <DependentUpon>201811300032104_fingerscrossed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811301820447_addUserName.resx">
+      <DependentUpon>201811301820447_addUserName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
