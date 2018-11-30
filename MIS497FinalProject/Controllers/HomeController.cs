@@ -21,9 +21,12 @@ namespace MIS497FinalProject.Controllers
             _context.Dispose();
         }
 
-        public ActionResult Index()
+        public ActionResult Index(string id)
         {
-            var userInfo = _context.Users.ToList();
+            //var userInfo = _context.Users.ToList().FirstOrDefault();
+            //return View(userInfo);
+            var userInfo = _context.Users.SingleOrDefault(c => c.Id == id);
+
             return View(userInfo);
         }
 

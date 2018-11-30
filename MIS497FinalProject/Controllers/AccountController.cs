@@ -151,7 +151,7 @@ namespace MIS497FinalProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FirstName = model.firstName, LastName = model.lastName };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FirstName = model.firstName, LastName = model.lastName, Age = model.Age, Height = model.Height, Weight = model.Weight, GoalWeight = model.GoalWeight};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -161,7 +161,6 @@ namespace MIS497FinalProject.Controllers
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);

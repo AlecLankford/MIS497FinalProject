@@ -1,28 +1,67 @@
-﻿@{
+﻿@model MIS497FinalProject.Models.ApplicationUser
+@{
 
     ViewBag.Title = "Home Page";
 }
+
 
 <div class="jumbotron">
     <h1>Welcome to CalTrak!</h1>
     <!--<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>-->
     <!--<p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>-->
 </div>
+@if (Model == null)
+{
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Name</h2>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Name</h2>
-        <input type="text" name="firstname" style="border-style : hidden;"><br />
-        <input type="text" name="lastname" style="border-style : hidden;"><br />
-    </div>
+            <input type="text" name="firstname" style="border-style : hidden;"><br />
+            <input type="text" name="lastname" style="border-style : hidden;"><br />
+        </div>
 
-    <div class="col-md-4">
-        <h2>Information</h2>
-        <form>
-            Age: <input type="text" name="age" style="border-style : hidden;"><br />
-            Weight: <input type="text" name="weight" style="border-style : hidden;"><br />
-            Goal Weight: <input type="text" name="goalweight" style="border-style : hidden;"><br />
-        </form>
+        <div class="col-md-4">
+            <h2>Information</h2>
+            <form>
+                Age: N/A <input type="text" name="age" style="border-style : hidden;"><br />
+                Weight: N/A<input type="text" name="weight" style="border-style : hidden;"><br />
+                Height: N/A<input type="text" name="goalweight" style="border-style : hidden;"><br />
+                Weight: N/A<input type="text" name="weight" style="border-style : hidden;"><br />
+                Goal Weight: N/A<input type="text" name="goalweight" style="border-style : hidden;"><br />
+                BMI: N/A<input type="text" name="goalweight" style="border-style : hidden;"><br />
+
+
+            </form>
+        </div>
     </div>
-</div>
+}
+
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Name</h2>
+
+            <form>@Model.FirstName</form>
+            <input type="text" name="firstname" style="border-style : hidden;"><br />
+            <input type="text" name="lastname" style="border-style : hidden;"><br />
+        </div>
+
+        <div class="col-md-4">
+            <h2>Information</h2>
+            <form>
+                Age: @Model.Age <input type="text" name="age" style="border-style : hidden;"><br />
+                Weight: @Model.Weight<input type="text" name="weight" style="border-style : hidden;"><br />
+                Height: @Model.Height<input type="text" name="goalweight" style="border-style : hidden;"><br />
+                Weight: @Model.Weight<input type="text" name="weight" style="border-style : hidden;"><br />
+                Goal Weight: @Model.GoalWeight<input type="text" name="goalweight" style="border-style : hidden;"><br />
+                BMI: @Model.GoalWeight<input type="text" name="goalweight" style="border-style : hidden;"><br />
+
+
+            </form>
+        </div>
+    </div>
+}
+
+
 

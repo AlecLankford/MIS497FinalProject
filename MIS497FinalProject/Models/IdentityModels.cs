@@ -12,6 +12,11 @@ namespace MIS497FinalProject.Models
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Age { get; set; }
+        public string Height { get; set; }
+        public string Weight { get; set; }
+        public string GoalWeight { get; set; }
+        public string BMI { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

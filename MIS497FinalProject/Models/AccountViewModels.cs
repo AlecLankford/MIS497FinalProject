@@ -87,6 +87,18 @@ namespace MIS497FinalProject.Models
         [Required]
         [DisplayAttribute(Name = "Last Name")]
         public string lastName { get; set; }
+
+        [DisplayAttribute(Name = "Current Weight")]
+        public string Weight { get; set; }
+
+        [DisplayAttribute(Name = "Height")]
+        public string Height { get; set; }
+
+        [DisplayAttribute(Name = "Current Age")]
+        public string Age { get; set; }
+
+        [DisplayAttribute(Name = "Goal Weight")]
+        public string GoalWeight { get; set; }
     }
 
     public class ResetPasswordViewModel

@@ -234,6 +234,10 @@
     <Compile Include="Migrations\201811301820447_addUserName.Designer.cs">
       <DependentUpon>201811301820447_addUserName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811302104042_userInfo.cs" />
+    <Compile Include="Migrations\201811302104042_userInfo.Designer.cs">
+      <DependentUpon>201811302104042_userInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Food.cs" />
@@ -357,6 +361,7 @@
     <Content Include="Views\Graphs\Graphs.cshtml" />
     <Content Include="Views\Graphs\ReportsHome.cshtml" />
     <Content Include="Views\Graphs\CalorieChart.cshtml" />
+    <Content Include="Views\Home\EditInformation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -415,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811301820447_addUserName.resx">
       <DependentUpon>201811301820447_addUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811302104042_userInfo.resx">
+      <DependentUpon>201811302104042_userInfo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
