@@ -1,0 +1,56 @@
+﻿
+@model  MIS497FinalProject.Models.Graphs
+@{
+    ViewBag.Title = "Health Reports - Macronutrient Composition";
+}
+
+<center>
+    <h2>Health Reports</h2>
+</center>
+<br />
+<br />
+
+
+<div class="btn-group btn-group-justified">
+    <a href="/Graphs/Graphs" class="btn btn-primary">Macronutrient Composition</a>
+    <a href="/Graphs/CalorieChart" class="btn btn-primary">Calorie Comparison</a>
+</div>
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var nutritionData = new google.visualization.DataTable();
+            nutritionData.addColumn('string', 'Nutrient');
+            nutritionData.addColumn('number', 'Percentage');
+            nutritionData.addRows([
+                ['Protein', @ViewBag.ProteinTotal],
+                ['Carbs', @ViewBag.CarbTotal],
+                ['Fat', @ViewBag.FatTotal]
+            ]);
+
+            var options = { 'title': 'Food Nutritional Composition', 'width': 550, 'height': 400 };
+
+            var chart = new google.visualization.PieChart(document.getElementById('nutritionalChart'));
+            chart.draw(nutritionData, options);
+
+            @*var calData = new google.visualization.DataTable();
+            calData.addColumn('string',
+            @foreach(string name in  )*@
+        }
+    </script>
+
+
+
+
+
+</head>
+<body>
+    <center>
+        <div id="nutritionalChart" />
+    </center>
+</body>
