@@ -66,5 +66,15 @@ namespace MIS497FinalProject.Controllers
             
             return View();
         }
+
+        public ActionResult ReportsHome()
+        {
+            return View();
+        }
+
+        public ActionResult CalorieChart()
+        {
+            return View();
+        }
     }
 }

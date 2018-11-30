@@ -18,7 +18,8 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44325</IISExpressSSLPort>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -343,6 +344,8 @@
     <Content Include="Views\Food\InsertData.cshtml" />
     <Content Include="Views\Food\EditFood.cshtml" />
     <Content Include="Views\Graphs\Graphs.cshtml" />
+    <Content Include="Views\Graphs\ReportsHome.cshtml" />
+    <Content Include="Views\Graphs\CalorieChart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
