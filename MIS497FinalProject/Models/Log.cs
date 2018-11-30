@@ -8,10 +8,6 @@ namespace MIS497FinalProject.Models
 {
     public class Log
     {
-        public int ID { get; set; }
-        [Required]
-        [Display(Name = "Select a date:")]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MMM/yyyy}")]
-        public DateTime LogDate { get; set; }
+       
     }
 }

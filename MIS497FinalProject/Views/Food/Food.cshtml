@@ -17,6 +17,7 @@ else
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
+                <th>Selected</th>
                 <th>Food Name</th>
                 <th>Calories</th>
                 <th>Protein</th>
@@ -27,18 +28,19 @@ else
         <tbody>
             @foreach (var food in Model)
             {
-                <tr>
-                    <td><input type="checkbox" />@food.FoodName</td>
-                    <td>@food.Calories</td>
-                    <td>@food.Protein</td>
-                    <td>@food.Fat</td>
-                    <td>@food.Carbs</td>
+            <tr>
+                <td><input type="checkbox" name="selectedNames"/></td>
+                <td>@food.FoodName</td>
+                <td>@food.Calories</td>
+                <td>@food.Protein</td>
+                <td>@food.Fat</td>
+                <td>@food.Carbs</td>
 
-                    <td>
-                        @Html.ActionLink("Edit", "EditFood", new { foodName = @food.FoodName })|
-                        @Html.ActionLink("Delete", "DeleteFood", new { foodName = @food.FoodName })
-                    </td>
-                </tr>
+                <td>
+                    @Html.ActionLink("Edit", "EditFood", new { foodName = @food.FoodName })|
+                    @Html.ActionLink("Delete", "DeleteFood", new { foodName = @food.FoodName })
+                </td>
+            </tr>
             }
         </tbody>
     </table>

@@ -221,6 +221,14 @@
     <Compile Include="Migrations\201811290937254_11291.Designer.cs">
       <DependentUpon>201811290937254_11291.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811292144292_selectfood.cs" />
+    <Compile Include="Migrations\201811292144292_selectfood.Designer.cs">
+      <DependentUpon>201811292144292_selectfood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811300032104_fingerscrossed.cs" />
+    <Compile Include="Migrations\201811300032104_fingerscrossed.Designer.cs">
+      <DependentUpon>201811300032104_fingerscrossed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Food.cs" />
@@ -229,7 +237,6 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="Models\addFoodViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -342,6 +349,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -386,6 +394,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811290937254_11291.resx">
       <DependentUpon>201811290937254_11291.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811292144292_selectfood.resx">
+      <DependentUpon>201811292144292_selectfood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811300032104_fingerscrossed.resx">
+      <DependentUpon>201811300032104_fingerscrossed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

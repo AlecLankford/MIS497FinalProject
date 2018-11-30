@@ -56,18 +56,6 @@ namespace MIS497FinalProject.Controllers
              return RedirectToAction("Food", "Food");
          }
 
-        /* public ViewResult Index()
-        {
-            var food = _context.Food.Include(c => c.FoodName).ToList();
-            return View(food);
-        }
-
-         public ActionResult Index()
-         {
-             var objStudentList = objContext.tbl_Students.ToList();
-             return View(objStudentList);
-         }*/
-
         //Function to edit a record from the food table
         public ActionResult EditFood(string foodName)
         {
@@ -115,5 +103,67 @@ namespace MIS497FinalProject.Controllers
             return RedirectToAction("Food");
         }
 
+
+        
+        /*
+        public ActionResult Submit()
+        {
+           //if (food.Selected == true) _context.FoodDTO.Add(food);
+
+            var model = new FoodSelection();
+            foreach (var f in _context.FoodDTO)
+            {
+                var editorViewModel = new FoodDTO()
+                {
+                    FoodName = f.FoodName,
+                    Calories = f.Calories,
+                    Protein = f.Protein,
+                    Fat = f.Fat,
+                    Selected = true
+                };
+                model.Food.Add(editorViewModel);
+            }
+            return View(model);
+        }
+
+        //////////////////////////////////////////
+
+        [HttpPost]
+        public ActionResult SubmitSelected(FoodSelection model)
+        {
+            // get the ids of the items selected:
+            var selectedIds = model.getSelectedNames();
+
+            // Use the ids to retrieve the records for the selected people
+            // from the database:
+            var selectedPeople = from x in _context.Food
+                                 where selectedIds.Contains(x.FoodName)
+                                 select x;
+
+            // Process according to your requirements:
+            foreach (var food in selectedPeople)
+            {
+                System.Diagnostics.Debug.WriteLine(
+                    string.Format("{0} {1}", food.FoodName, food.Calories));
+            }
+
+            // Redirect somewhere meaningful (probably to somewhere showing 
+            // the results of your processing):
+            return RedirectToAction("../Log/Index");
+        }
+
+        ////////////////////////////////////////////
+
+        public ViewResult Index()
+        {
+            var food = _context.Food.Include(c => c.FoodName).ToList();
+            return View(food);
+        }
+
+         public ActionResult Index()
+         {
+             var objStudentList = objContext.tbl_Students.ToList();
+             return View(objStudentList);
+         }*/
     }
 }
