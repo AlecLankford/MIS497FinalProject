@@ -30,6 +30,30 @@ namespace MIS497FinalProject.Controllers
             return View(userInfo);
         }
 
+        public ActionResult EditInfo()
+        {
+            ////Add function
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult EditInfo(ApplicationUser User)
+        {
+            ////add validation
+            ApplicationUser temp = (ApplicationUser)TempData["Info"];
+            var info = _context.Users.Where(x => x.UserName == User.UserName).FirstOrDefault();
+            if (info != null)
+            {
+                info.Age = User.Age;
+                info.Weight = User.Weight;
+                info.Height = User.Height;
+                info.GoalWeight = info.GoalWeight;
+                _context.Entry(info).State = EntityState.Modified;
+                _context.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
