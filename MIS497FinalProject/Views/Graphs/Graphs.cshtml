@@ -1,7 +1,7 @@
 ﻿
 @model  MIS497FinalProject.Models.Graphs
 @{
-    ViewBag.Title = "Health Reports - Macronutrient Composition";
+    ViewBag.Title = "Health Reports - Pie Chart";
 }
 
 <center>
@@ -12,38 +12,34 @@
 
 
 <div class="btn-group btn-group-justified">
-    <a href="/Graphs/Graphs" class="btn btn-primary">Macronutrient Composition</a>
-    <a href="/Graphs/CalorieChart" class="btn btn-primary">Calorie Comparison</a>
+    <a href="/Graphs/Graphs" class="btn btn-primary">Pie Chart</a>
+    <a href="/Graphs/CalorieChart" class="btn btn-primary">Bar Chart</a>
 </div>
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawPieChart);
 
-        function drawChart() {
+        function drawPieChart() {
 
-            var nutritionData = new google.visualization.DataTable();
-            nutritionData.addColumn('string', 'Nutrient');
-            nutritionData.addColumn('number', 'Percentage');
-            nutritionData.addRows([
+            var pieData = new google.visualization.DataTable();
+            pieData.addColumn('string', 'Nutrient');
+            pieData.addColumn('number', 'Grams');
+            pieData.addRows([
                 ['Protein', @ViewBag.ProteinTotal],
                 ['Carbs', @ViewBag.CarbTotal],
                 ['Fat', @ViewBag.FatTotal]
             ]);
 
-            var options = { 'title': 'Food Nutritional Composition', 'width': 550, 'height': 400 };
+            var pieOptions = { 'title': 'Diet Nutritional Composition', 'width': 550, 'height': 400 };
 
-            var chart = new google.visualization.PieChart(document.getElementById('nutritionalChart'));
-            chart.draw(nutritionData, options);
-
-            @*var calData = new google.visualization.DataTable();
-            calData.addColumn('string',
-            @foreach(string name in  )*@
+            var pieChart = new google.visualization.PieChart(document.getElementById('pieChart'));
+            pieChart.draw(pieData, pieOptions);
         }
     </script>
-
+    
 
 
 
@@ -51,6 +47,6 @@
 </head>
 <body>
     <center>
-        <div id="nutritionalChart" />
+        <div id="pieChart" />
     </center>
 </body>

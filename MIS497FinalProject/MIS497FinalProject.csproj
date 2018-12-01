@@ -19,9 +19,9 @@
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44301</IISExpressSSLPort>
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -360,7 +360,9 @@
     <Content Include="Views\Food\EditFood.cshtml" />
     <Content Include="Views\Graphs\Graphs.cshtml" />
     <Content Include="Views\Graphs\ReportsHome.cshtml" />
-    <Content Include="Views\Graphs\CalorieChart.cshtml" />
+    <Content Include="Views\Graphs\CalorieChart.cshtml">
+      <BrowseToURL>~/Graphs/BarChart</BrowseToURL>
+    </Content>
     <Content Include="Views\Home\EditInformation.cshtml" />
   </ItemGroup>
   <ItemGroup>

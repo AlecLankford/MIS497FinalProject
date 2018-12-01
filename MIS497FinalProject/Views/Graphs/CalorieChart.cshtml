@@ -1,6 +1,7 @@
 ﻿
+@model  MIS497FinalProject.Models.Graphs
 @{
-    ViewBag.Title = "Health Reports - Calorie Comparison";
+    ViewBag.Title = "Health Reports - Bar Chart";
 }
 
 <center>
@@ -11,26 +12,40 @@
 
 
 <div class="btn-group btn-group-justified">
-    <a href="/Graphs/Graphs" class="btn btn-primary">Macronutrient Composition</a>
-    <a href="/Graphs/CalorieChart" class="btn btn-primary">Calorie Comparison</a>
+    <a href="/Graphs/Graphs" class="btn btn-primary">Pie Chart</a>
+    <a href="/Graphs/CalorieChart" class="btn btn-primary">Bar Chart</a>
 </div>
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawBarChart);
 
-        @*function drawChart() {
+        function drawBarChart() {
 
-            var calData = new google.visualization.DataTable();
-            calData.addColumn('string',
-            @foreach(string name in  )*@
+            var barData = new google.visualization.DataTable();
+            barData.addColumn('string', 'Nutrient');
+            barData.addColumn('number', 'Grams');
+            barData.addRows([
+                ['Protein',@ViewBag.bProteinTotal],
+                ['Carbs',@ViewBag.bCarbTotal],
+                ['Fat',@ViewBag.bFatTotal]
+            ]);
+
+            var barOptions = { 'title': 'Diet Nutritional Composition', 'width': 550, 'height': 400 };
+
+            var barChart = new google.visualization.BarChart(document.getElementById('barChart'));
+            barChart.draw(barData, barOptions);
         }
     </script>
-
-
-
-
-
 </head>
+<body>
+    <center>
+        <center>
+            <div id="barChart" />
+        </center>
+    </center>
+</body>
+
+
